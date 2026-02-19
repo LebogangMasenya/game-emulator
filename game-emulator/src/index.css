@@ -136,4 +136,63 @@
     transform: translateX(2px) scale(0.98);
 }
 
+.wrapperGamePad {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    background: #bfbfbf; /* page background */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+body {
+    background: #bfbfbf; 
+}
+
+/* Console body */
+.game-pad {
+    background: #d9d9d9; /* light grey console */
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow:
+        inset 0 0 20px rgba(0,0,0,0.15),
+        0 15px 30px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.screen {
+    background: #2c2c2c; /* dark bezel */
+    padding: 30px;
+    border-radius: 20px;
+    width: 340px;
+    box-shadow:
+        inset 0 0 15px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen p {
+    color: #ccc;
+    font-size: x-large;
+    margin: 5px 0;
+}
+
+/* The actual game display */
+.display {
+    width: 315px;
+    height: 210px;
+    margin-top: 15px;
+    background: #9bbc0f; /* GameBoy green tone */
+    border-radius: 8px;
+    box-shadow:
+        inset 0 0 10px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+
 

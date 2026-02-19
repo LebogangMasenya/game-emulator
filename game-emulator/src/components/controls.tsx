@@ -1,7 +1,6 @@
 // import direction buttons
 import ButtonsLetters from "./buttonsLetters";
 import CreateButtonDirection from "./buttonDirection";
-import CheatCodeMenu from "./cheatCodeMenu";
 
 interface ButtonsLettersProps {
     pressedButtons: string[];
@@ -12,13 +11,10 @@ interface ButtonsLettersProps {
 }
 
 function Controls({pressedButtons, onButtonPress}: ButtonsLettersProps) {
-    
-
     return (
         <div className="controls">
             <ButtonsLetters pressedButtons={pressedButtons} onButtonPress={onButtonPress} />
             <CreateButtonDirection pressedButtons={pressedButtons} onButtonPress={onButtonPress} />
-            <CheatCodeMenu />
         </div>
     )
 }
