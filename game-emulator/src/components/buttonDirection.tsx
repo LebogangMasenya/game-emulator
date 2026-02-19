@@ -1,5 +1,6 @@
 
-export default function createButtonDirection() {
+
+export default function createButtonDirection({pressedButtons, setPressedButtons}: {pressedButtons: string[], setPressedButtons: React.Dispatch<React.SetStateAction<string[]>>}) {
     return (
          <div className="button-direction">
             <button className="up" onClick={() => console.log("up")}>up</button>
