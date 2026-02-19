@@ -4,18 +4,16 @@ import {checkCheatCode} from '../utils/cheats';
 import { useState } from "react";
 
 
-
 export default function GamePad() {
     const [pressedButtons, setPressedButtons] = useState<string[]>([]);
+
     const handleButtonPress = (button: string) => {
         setPressedButtons(prev => {
-            if (prev.includes(button)) {
-                return prev.filter(b => b !== button);
-            }
             return [...prev, button];
         });
     };
-    
+
+    console.log("Pressed Buttons in GamePad: ", pressedButtons);
     return (        
         <div className="game-pad">
             <Screen cheatsEnabled={checkCheatCode(pressedButtons)} />
