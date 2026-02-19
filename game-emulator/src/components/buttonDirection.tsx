@@ -1,10 +1,18 @@
-export default function CreateButtonDirection({pressedButtons, setPressedButtons}: {pressedButtons: string[], setPressedButtons: React.Dispatch<React.SetStateAction<string[]>>}) {
+interface ButtonsLettersProps {
+    pressedButtons: string[];
+    onButtonPress: (button: string) => void;  
+    // this is a callback function that will be called when a button is pressed,
+    //  it will receive the button that was pressed as an argument, 
+    // and it will be responsible for updating the state of the emulator with the new button press
+}
+
+export default function CreateButtonDirection({pressedButtons, onButtonPress}: ButtonsLettersProps) {
     return (
         <div className="button-direction">
-            <button className="up" onClick={() => setPressedButtons(prev => [...prev, "UP"])}>▲</button>
-            <button className="right" onClick={() => setPressedButtons(prev => [...prev, "RIGHT"])}>▶</button>
-            <button className="down" onClick={() => setPressedButtons(prev => [...prev, "DOWN"])}>▼</button>
-            <button className="left" onClick={() => setPressedButtons(prev => [...prev, "LEFT"])}>◀</button>
+            <button className="up" onClick={() => onButtonPress("UP")}>▲</button>
+            <button className="right" onClick={() => onButtonPress("RIGHT")}>▶</button>
+            <button className="down" onClick={() => onButtonPress("DOWN")}>▼</button>
+            <button className="left" onClick={() => onButtonPress("LEFT")}>◀</button>
         </div>
     );
 };
