@@ -1,12 +1,13 @@
 // import direction buttons
 import Buttons from "./buttons";
-import { useMemo } from "react";
+import { useState } from "react";
 
 function Controls() {
-    const buttonOrder = useMemo(() => ["A", "B", "X", "Y"], []);
+    const [pressedButtons, setPressedButtons] = useState<string[]>([]);
+
     return (
         <div className="controls">
-            <Buttons  />
+            <Buttons pressedButtons={pressedButtons} setPressedButtons={setPressedButtons} />
             {/* add directional buttons */}
         </div>
     )
