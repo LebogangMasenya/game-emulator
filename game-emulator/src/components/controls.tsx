@@ -1,6 +1,7 @@
 // import direction buttons
 import Buttons from "./buttons";
 import { useState } from "react";
+import CreateButtonDirection from "./buttonDirection";
 
 function Controls() {
     const [pressedButtons, setPressedButtons] = useState<string[]>([]);
@@ -8,7 +9,7 @@ function Controls() {
     return (
         <div className="controls">
             <Buttons pressedButtons={pressedButtons} setPressedButtons={setPressedButtons} />
-            {/* add directional buttons */}
+            <CreateButtonDirection pressedButtons={pressedButtons} setPressedButtons={setPressedButtons} />
         </div>
     )
 }

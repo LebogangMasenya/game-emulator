@@ -43,3 +43,56 @@
     transform: scale(0.95);
     background: #444;
 }
+
+.buttons {
+    display: grid;
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 70px 70px;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Base button styling */
+.button {
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.4);
+    transition: all 0.1s ease;
+}
+
+/* Press effect */
+.button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Traditional SNES colors */
+.a {
+    background: #2ecc71; /* green */
+}
+
+.b {
+    background: #e74c3c; /* red */
+}
+
+.x {
+    background: #3498db; /* blue */
+}
+
+.y {
+    background: #f1c40f; /* yellow */
+}
+
+.controls {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+

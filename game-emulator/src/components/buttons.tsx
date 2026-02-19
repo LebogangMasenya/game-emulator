@@ -3,13 +3,12 @@
 function Buttons({pressedButtons, setPressedButtons}: {pressedButtons: string[], setPressedButtons: React.Dispatch<React.SetStateAction<string[]>>}) {
     return (
         <div className="buttons">
-            <button className="button" onClick={() => setPressedButtons(prev => [...prev, "A"])}>A</button>
-            <button className="button" onClick={() => setPressedButtons(prev => [...prev, "B"])}>B</button>
-            <button className="button" onClick={() => setPressedButtons(prev => [...prev, "X"])}>X</button>
-            <button className="button" onClick={() => setPressedButtons(prev => [...prev, "Y"])}>Y</button>
+            <button className="button a" onClick={() => setPressedButtons(prev => [...prev, "A"])}>A</button>
+            <button className="button b" onClick={() => setPressedButtons(prev => [...prev, "B"])}>B</button>
+            <button className="button x" onClick={() => setPressedButtons(prev => [...prev, "X"])}>X</button>
+            <button className="button y" onClick={() => setPressedButtons(prev => [...prev, "Y"])}>Y</button>
         </div>
     )
 }
-
 
 export default Buttons;
