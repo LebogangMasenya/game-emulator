@@ -7,10 +7,10 @@ interface ButtonsLettersProps {
 function ButtonsLetters({pressedButtons, onButtonPress}: ButtonsLettersProps) {
     return (
         <div className="buttons">
-            <button className="a" onClick={() => onButtonPress("A")}>A</button>
-            <button className="b" onClick={() => onButtonPress("B")}>B</button>
-            <button className="x" onClick={() => onButtonPress("X")}>X</button>
-            <button className="y" onClick={() => onButtonPress("Y")}>Y</button>
+            <button className="button a" onClick={() => onButtonPress("A")}>A</button>
+            <button className="button b" onClick={() => onButtonPress("B")}>B</button>
+            <button className="button x" onClick={() => onButtonPress("X")}>X</button>
+            <button className="button y" onClick={() => onButtonPress("Y")}>Y</button>
         </div>
     )
 }
