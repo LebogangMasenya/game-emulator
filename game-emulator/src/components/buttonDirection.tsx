@@ -6,7 +6,7 @@ interface ButtonsLettersProps {
     // and it will be responsible for updating the state of the emulator with the new button press
 }
 
-export default function CreateButtonDirection({pressedButtons, onButtonPress}: ButtonsLettersProps) {
+export default function CreateButtonDirection({onButtonPress}: ButtonsLettersProps) {
     return (
         <div className="button-direction">
             <button className="up" onClick={() => onButtonPress("UP")}>▲</button>
