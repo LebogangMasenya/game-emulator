@@ -1,6 +1,7 @@
+import GameCanvas from "./gameCanvas";
 
-
-function Screen({cheatsEnabled}: {cheatsEnabled: string}) {
+function Screen({cheatsEnabled, currentButton}: {cheatsEnabled: string, currentButton?: string}) {
+    console.log("Cheats Enabled in Screen: ", currentButton);
     return (
         <>
             <div className="screen">
@@ -8,7 +9,7 @@ function Screen({cheatsEnabled}: {cheatsEnabled: string}) {
                 {cheatsEnabled.length > 0 && <p>Cheats Enabled: {cheatsEnabled}</p>}
 
                 <div className="display">
-            
+                    <GameCanvas currentButton={currentButton} />
                 </div>
             </div>
 

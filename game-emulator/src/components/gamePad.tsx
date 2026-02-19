@@ -14,9 +14,10 @@ export default function GamePad() {
     };
 
     console.log("Pressed Buttons in GamePad: ", pressedButtons);
+   
     return (        
         <div className="game-pad">
-            <Screen cheatsEnabled={checkCheatCode(pressedButtons)} />
+            <Screen cheatsEnabled={checkCheatCode(pressedButtons)} currentButton={pressedButtons[pressedButtons.length - 1]} />
             <Controls pressedButtons={pressedButtons} onButtonPress={handleButtonPress} />
         </div>
     )
