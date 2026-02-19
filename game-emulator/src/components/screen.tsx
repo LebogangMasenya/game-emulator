@@ -1,10 +1,10 @@
 
-
 function Screen({cheatsEnabled}: {cheatsEnabled: string}) {
+    //this component is responsible for displaying the fighter of the game library
     return (
         <>
             <div className="screen">
-                <p>Screen</p>
+                <p>Nintendo</p>
                 {cheatsEnabled.length > 0 && <p>Cheats Enabled: {cheatsEnabled}</p>}
 
                 <div className="display">
@@ -13,7 +13,7 @@ function Screen({cheatsEnabled}: {cheatsEnabled: string}) {
             </div>
 
         </>
-    )
-}
+    );
+};
 
 export default Screen;
