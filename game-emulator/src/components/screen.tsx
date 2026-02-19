@@ -3,15 +3,14 @@
 function Screen({cheatsEnabled}: {cheatsEnabled: string}) {
     return (
         <>
-        <div className="screen">
-            <p>Screen</p>
-            {cheatsEnabled && <p>Cheats Enabled: {cheatsEnabled}</p>}
+            <div className="screen">
+                <p>Screen</p>
+                {cheatsEnabled.length > 0 && <p>Cheats Enabled: {cheatsEnabled}</p>}
 
-            <div className="display">
-        
-
+                <div className="display">
+            
+                </div>
             </div>
-        </div>
 
         </>
     )
