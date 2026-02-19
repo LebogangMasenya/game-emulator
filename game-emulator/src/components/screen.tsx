@@ -1,5 +1,8 @@
 import GameCanvas from "./gameCanvas";
+
+
 function Screen({cheatsEnabled, currentButton}: {cheatsEnabled: string, currentButton?: string}) {
+     //this component is responsible for displaying the fighter of the game library
     console.log("Cheats Enabled in Screen: ", currentButton);
     return (
         <>
