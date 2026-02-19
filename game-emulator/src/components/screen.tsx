@@ -1,9 +1,8 @@
 import GameCanvas from "./gameCanvas";
 
 
-function Screen({cheatsEnabled, currentButton}: {cheatsEnabled: string, currentButton?: string}) {
+function Screen({cheatsEnabled, buttonList, currentButton}: {cheatsEnabled: string, buttonList: string[], currentButton?: string}) {
      //this component is responsible for displaying the fighter of the game library
-    console.log("Cheats Enabled in Screen: ", currentButton);
     return (
         <>
             <div className="screen">
@@ -11,7 +10,7 @@ function Screen({cheatsEnabled, currentButton}: {cheatsEnabled: string, currentB
                 {cheatsEnabled.length > 0 && <p>Cheats Enabled: {cheatsEnabled}</p>}
 
                 <div className="display">
-                    <GameCanvas currentButton={currentButton} />
+                    <GameCanvas buttonList={buttonList} currentButton={currentButton} />
                 </div>
             </div>
 

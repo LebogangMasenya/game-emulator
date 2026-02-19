@@ -18,7 +18,7 @@ export default function GamePad() {
     return ( 
         <div className="wrapperGamePad">
             <div className="game-pad">
-                <Screen cheatsEnabled={checkCheatCode(pressedButtons)} />
+                <Screen buttonList={pressedButtons} cheatsEnabled={checkCheatCode(pressedButtons)}  currentButton={pressedButtons[pressedButtons.length - 1]} />
                 <Controls pressedButtons={pressedButtons} onButtonPress={handleButtonPress} />
             </div>
             <div>
