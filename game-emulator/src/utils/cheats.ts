@@ -1,4 +1,4 @@
-
+// import cheat codes
 function getCheatCodes() {
   const cheatCodes = [
     {

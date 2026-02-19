@@ -11,6 +11,7 @@ interface ButtonsLettersProps {
 }
 
 function Controls({pressedButtons, onButtonPress}: ButtonsLettersProps) {
+    
 
     return (
         <div className="controls">
