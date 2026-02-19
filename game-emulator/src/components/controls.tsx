@@ -1,5 +1,6 @@
 // import direction buttons
-import Buttons from "./buttonsLetters";
+import ButtonsLetters from "./buttonsLetters";
+import CreateButtonDirection from "./buttonDirection";
 interface ButtonsLettersProps {
     pressedButtons: string[];
     onButtonPress: (button: string) => void;  
@@ -12,8 +13,8 @@ function Controls({pressedButtons, onButtonPress}: ButtonsLettersProps) {
 
     return (
         <div className="controls">
-            <Buttons pressedButtons={pressedButtons} onButtonPress={onButtonPress} />
-            {/* add directional buttons */}
+            <ButtonsLetters pressedButtons={pressedButtons} onButtonPress={onButtonPress} />
+            <CreateButtonDirection pressedButtons={pressedButtons} setPressedButtons={setPressedButtons} />
         </div>
     )
 }
