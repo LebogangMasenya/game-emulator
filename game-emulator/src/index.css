@@ -194,5 +194,50 @@ body {
     overflow: hidden;
 }
 
+.listValues_ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cheat-item {
+    background: #3a3a3a;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.25s ease;
+    border-left: 4px solid #8e44ad;
+}
+
+.cheat-item:hover {
+    background: #454545;
+}
+
+.cheat-item.active {
+    background: #4a4a4a;
+    border-left: 4px solid #f1c40f;
+}
+
+.cheat-title {
+    padding: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cheat-content {
+    padding: 10px 15px;
+    background: #222;
+    font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.cheat-content p {
+    margin: 6px 0;
+    color: #9bbc0f;
+    font-family: monospace;
+}
+
+
 
 
