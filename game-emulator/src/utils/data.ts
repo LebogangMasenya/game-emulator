@@ -34,7 +34,7 @@ export default function getCheatCodes() {
     },
     {
       id: 3,
-      name: "UNLOCK_ALL_LEVELS",
+      name: "INVISIBILITY",
       sequence: [
         "UP",
         "UP",
