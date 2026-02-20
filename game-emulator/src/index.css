@@ -1,91 +1,91 @@
 .button-direction {
-    display: grid;
-    grid-template-columns: 60px 60px 60px;
-    grid-template-rows: 60px 60px 60px;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Positioning */
 .up {
-    grid-column: 2;
-    grid-row: 1;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .left {
-    grid-column: 1;
-    grid-row: 2;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .right {
-    grid-column: 3;
-    grid-row: 2;
+  grid-column: 3;
+  grid-row: 2;
 }
 
 .down {
-    grid-column: 2;
-    grid-row: 3;
+  grid-column: 2;
+  grid-row: 3;
 }
 
 /* Button styling */
 .button-direction button {
-    background: #222;
-    color: white;
-    border: none;
-    font-size: 24px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.1s;
+  background: #222;
+  color: white;
+  border: none;
+  font-size: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.1s;
 }
 
 .button-direction button:active {
-    transform: scale(0.95);
-    background: #444;
+  transform: scale(0.95);
+  background: #444;
 }
 
 .buttons {
-    display: grid;
-    grid-template-columns: 70px 70px;
-    grid-template-rows: 70px 70px;
-    gap: 12px;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 70px 70px;
+  grid-template-rows: 70px 70px;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Base button styling */
 .button {
-    border: none;
-    border-radius: 50%;
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.4);
-    transition: all 0.1s ease;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.1s ease;
 }
 
 /* Press effect */
 .button:active {
-    transform: translateY(4px);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* Traditional SNES colors */
 .a {
-    background: #2ecc71; /* green */
+  background: #2ecc71; /* green */
 }
 
 .b {
-    background: #e74c3c; /* red */
+  background: #e74c3c; /* red */
 }
 
 .x {
-    background: #3498db; /* blue */
+  background: #3498db; /* blue */
 }
 
 .y {
-    background: #f1c40f; /* yellow */
+  background: #f1c40f; /* yellow */
 }
 
 .controls {
@@ -97,147 +97,141 @@
 }
 
 .wrapperListValues {
-    background: #2c2c2c;              /* dark console gray */
-    padding: 20px;
-    border-radius: 16px;
-    width: 250px;
-    box-shadow: 
-        inset 0 0 8px rgba(0,0,0,0.6),
-        0 8px 20px rgba(0,0,0,0.4);
-    color: white;
+  background: #2c2c2c; /* dark console gray */
+  padding: 20px;
+  border-radius: 16px;
+  width: 250px;
+  box-shadow:
+    inset 0 0 8px rgba(0, 0, 0, 0.6),
+    0 8px 20px rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
 .listValues_ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .listValues_ul li {
-    background: #3a3a3a;
-    margin-bottom: 10px;
-    padding: 10px 14px;
-    border-radius: 8px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: all 0.15s ease;
-    cursor: pointer;
-    border-left: 5px solid #f1c40f; /* subtle SNES yellow accent */
+  background: #3a3a3a;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  border-left: 5px solid #f1c40f; /* subtle SNES yellow accent */
 }
 
 /* Hover effect */
 .listValues_ul li:hover {
-    background: #4a4a4a;
-    transform: translateX(4px);
+  background: #4a4a4a;
+  transform: translateX(4px);
 }
 
 /* Active press feel */
 .listValues_ul li:active {
-    transform: translateX(2px) scale(0.98);
+  transform: translateX(2px) scale(0.98);
 }
 
 .wrapperGamePad {
-    display: flex;
-    gap: 40px;
-    padding: 40px;
-    background: #bfbfbf; /* page background */
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  background: #bfbfbf; /* page background */
+  justify-content: center;
+  align-items: flex-start;
 }
 
 body {
-    background: #bfbfbf; 
+  background: #bfbfbf;
 }
 
 /* Console body */
 .game-pad {
-    background: #d9d9d9; /* light grey console */
-    padding: 40px;
-    border-radius: 40px;
-    box-shadow:
-        inset 0 0 20px rgba(0,0,0,0.15),
-        0 15px 30px rgba(0,0,0,0.3);
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
+  background: #d9d9d9; /* light grey console */
+  padding: 40px;
+  border-radius: 40px;
+  box-shadow:
+    inset 0 0 20px rgba(0, 0, 0, 0.15),
+    0 15px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
 }
 
 .screen {
-    background: #2c2c2c; /* dark bezel */
-    padding: 30px;
-    border-radius: 20px;
-    width: 340px;
-    box-shadow:
-        inset 0 0 15px rgba(0,0,0,0.8);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: #2c2c2c; /* dark bezel */
+  padding: 30px;
+  border-radius: 20px;
+  width: 340px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .screen p {
-    color: #ccc;
-    font-size: x-large;
-    margin: 5px 0;
+  color: #ccc;
+  font-size: x-large;
+  margin: 5px 0;
 }
 
 /* The actual game display */
 .display {
-    width: 315px;
-    height: 210px;
-    margin-top: 15px;
-    background: #9bbc0f; /* GameBoy green tone */
-    border-radius: 8px;
-    box-shadow:
-        inset 0 0 10px rgba(0,0,0,0.4);
-    position: relative;
-    overflow: hidden;
+  width: 315px;
+  height: 210px;
+  margin-top: 15px;
+  background: #9bbc0f; /* GameBoy green tone */
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
 }
 
 .listValues_ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .cheat-item {
-    background: #3a3a3a;
-    margin-bottom: 12px;
-    border-radius: 10px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.25s ease;
-    border-left: 4px solid #8e44ad;
+  background: #3a3a3a;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  border-left: 4px solid #8e44ad;
 }
 
 .cheat-item:hover {
-    background: #454545;
+  background: #454545;
 }
 
 .cheat-item.active {
-    background: #4a4a4a;
-    border-left: 4px solid #f1c40f;
+  background: #4a4a4a;
+  border-left: 4px solid #f1c40f;
 }
 
 .cheat-title {
-    padding: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
+  padding: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .cheat-content {
-    padding: 10px 15px;
-    background: #222;
-    font-size: 13px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 10px 15px;
+  background: #222;
+  font-size: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cheat-content p {
-    margin: 6px 0;
-    color: #9bbc0f;
-    font-family: monospace;
+  margin: 6px 0;
+  color: #9bbc0f;
+  font-family: monospace;
 }
-
-
-
-
